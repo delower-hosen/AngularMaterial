@@ -67,3 +67,31 @@
 
 <mat-icon color="primary">grade</mat-icon>
 
+
+<div>
+  <span matBadge="5" matBadgeOverlap="false">Notifications</span>
+</div>
+<div>
+  <span matBadge="5" matBadgeColor="primary" matBadgePosition="below before">Notifications</span>
+</div>
+<div>
+  <span matBadge="5" matBadgeOverlap="false" matBadgeColor="accent" matBadgePosition="below after">Notifications</span>
+</div>
+<div>
+  <span matBadge="5" matBadgeColor="warn" matBadgePosition="above before">Notifications</span>
+</div>
+
+<div>
+  <span matBadge="5" matBadgeSize="small" >Notifications</span>
+</div>
+<div>
+  <span matBadge="5" matBadgeSize="medium" >Notifications</span>
+</div>
+<div>
+  <span matBadge="5" matBadgeSize="large" >Notifications</span>
+</div>
+
+
+<mat-progress-spinner value="40">fdf</mat-progress-spinner>
+<mat-spinner *ngIf="showSpinner" color="warn" ></mat-spinner>
+<button (click)="loadData()" >Load Data</button>
