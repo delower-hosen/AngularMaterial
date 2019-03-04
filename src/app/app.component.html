@@ -45,5 +45,22 @@
 <div>
   <button color="primary" mat-button>Primary</button>
   <button color="accent" mat-button >Accent</button>
-  <button color="warn" mat-button>Warn</button>
+  <button color="warn" disableRipple mat-button>Warn</button>
+  <button color="primary" mat-raised-button>Primary</button>
+  <button color="accent" mat-raised-button >Accent</button>
+  <button color="warn" mat-raised-button>Warn</button>
+</div>
+
+<div>
+  <mat-button-toggle disableRipple checked #toggleBtn>Toggle</mat-button-toggle>
+  {{toggleBtn.checked}}
+</div>
+
+<div>
+  <mat-button-toggle-group multiple #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle disableRipple value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle disableRipple value="react">React</mat-button-toggle>
+    <mat-button-toggle disableRipple value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
 </div>
